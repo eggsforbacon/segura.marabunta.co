@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brigadistas",
+  "info": {
+    "singularName": "brigadista",
+    "pluralName": "brigadistas",
+    "displayName": "brigadista"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orden": {
+      "type": "integer",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "departamento": {
+      "type": "string",
+      "required": true
+    },
+    "rol": {
+      "type": "enumeration",
+      "enum": [
+        "LIDER DE LA EMERGENCIA",
+        "COMITÉ DE CRISIS",
+        "LIDER DE LA BRIGADA",
+        "LÍDERE DE EVACUACIÓN",
+        "BRIGADISTA",
+        "COORDINADOR DE EVACUACIÓN"
+      ]
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "habilidades": {
+      "type": "text",
+      "required": true
+    },
+    "estado": {
+      "type": "enumeration",
+      "required": true,
+      "default": "Activo",
+      "enum": [
+        "Activo",
+        "No Activo"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calendarios",
+  "info": {
+    "singularName": "calendario",
+    "pluralName": "calendarios",
+    "displayName": "calendario"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "fecha_inicio": {
+      "type": "datetime",
+      "required": true
+    },
+    "fecha_fin": {
+      "type": "datetime",
+      "required": true
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Simulacro de Evacuación General",
+        "Reunión del Comité de Seguridad y Salud en el Trabajo",
+        "Capacitación en Plan de Evacuación y Rutas de Escape",
+        "Entrenamiento en Uso de Extintores y Equipos Contra Incendio",
+        "Capacitación en Primeros Auxilios",
+        "Revisión y Actualización del Plan de Emergencias"
+      ]
+    }
+  }
+}
