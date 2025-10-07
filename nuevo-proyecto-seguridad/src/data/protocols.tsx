@@ -4,8 +4,8 @@ import { Activity, Flame, HeartPulse, CloudRain, Bomb, Users, AlertOctagon } fro
 export const protocols: Protocol[] = [
   {
     id: 'sismo',
-    title: 'Protocolo de Sismo',
-    description: 'Acciones a seguir antes, durante y después de un movimiento telúrico.',
+    title: 'Protocolo de sismo',
+    description: 'Sigue estas acciones antes, durante y después de un movimiento telúrico.',
     icon: Activity,
     color: 'from-yellow-500 to-orange-500',
     textColor: 'text-orange-900',
@@ -20,7 +20,7 @@ export const protocols: Protocol[] = [
   },
   {
     id: 'incendio',
-    title: 'Protocolo de Incendio',
+    title: 'Protocolo de incendio',
     description: 'Cómo actuar para controlar y evacuar en caso de fuego.',
     icon: Flame,
     color: 'from-red-500 to-orange-500',
@@ -36,7 +36,7 @@ export const protocols: Protocol[] = [
   },
  {
     id: 'emergencia-medica',
-    title: 'Emergencia Médica',
+    title: 'Emergencia médica',
     description: 'Pasos para asistir a una persona herida o con un mal súbito.',
     icon: HeartPulse,
     color: 'from-green-600 to-green-400',
@@ -52,7 +52,7 @@ export const protocols: Protocol[] = [
   },
   {
     id: 'inundacion',
-    title: 'Protocolo de Inundación',
+    title: 'Protocolo de inundación',
     description: 'Qué hacer antes, durante y después de una inundación en las instalaciones.',
     icon: CloudRain,
     color: 'from-blue-500 to-teal-500',
@@ -68,7 +68,7 @@ export const protocols: Protocol[] = [
   },
   {
     id: 'atentado',
-    title: 'Protocolo de Atentado',
+    title: 'Protocolo de atentado',
     description: 'Cómo actuar ante amenaza o acto de terrorismo.',
     icon: Bomb,
     color: 'from-slate-600 to-gray-700',
@@ -89,7 +89,7 @@ export const protocols: Protocol[] = [
   },
   {
     id: 'aglomeracion',
-    title: 'Protocolo de Aglomeraciones',
+    title: 'Protocolo de aglomeraciones',
     description: 'Acciones a seguir en caso de concentraciones masivas.',
     icon: Users,
     color: 'from-sky-500 to-blue-600',
@@ -110,7 +110,7 @@ export const protocols: Protocol[] = [
   },
    {
     id: 'disturbios',
-    title: 'Protocolo de Disturbios',
+    title: 'Protocolo de disturbios',
     description: 'Cómo protegerse en caso de disturbios o manifestaciones violentas.',
     icon: AlertOctagon,
     color: 'from-amber-500 to-orange-600',

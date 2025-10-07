@@ -129,7 +129,7 @@ export default function DrillsCalendarPage() {
                             <Calendar className="w-12 h-12 text-[#6e23ac]"/>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-                            Mapa de Seguridad
+                            Mapa de seguridad
                         </h1>
                         <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
                             La preparación es clave. Mantente informado sobre las fechas y horarios de los próximos
@@ -138,7 +138,7 @@ export default function DrillsCalendarPage() {
                     </div>
                     <div className="container relative  mx-auto max-w-4xl mb-32 z-10">
                         <h2 className="text-3xl font-bold text-center text-white mb-8">
-                            ¿Por qué es Importante?
+                            ¿Por qué es importante?
                         </h2>
                         <div className="bg-transparent border-2 border-[#6e23ac] p-6 rounded-lg">
                             <p className="text-lg text-center text-white">

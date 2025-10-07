@@ -87,19 +87,19 @@ export default function PausasActivasPage() {
                        <div className="inline-flex items-center justify-center bg-gray-800 p-4 rounded-full mb-4">
                             <Activity className="w-12 h-12 text-purple-400" />
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-4 text-white">Elige tu Pausa Activa</h1>
+                        <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-4 text-white">Elige tu pausa activa</h1>
                         <p className="text-lg text-gray-400 text-center mb-12 max-w-2xl">Dedica 5 minutos a tu bienestar. Selecciona tu rol para ver los ejercicios recomendados para ti.</p>
                        
                         <div className="flex flex-col md:flex-row justify-center items-center gap-10 w-full">
-                            <SelectionCard title="Personal Administrativo" description="Ejercicios enfocados en relajar músculos por posturas sedentarias y fatiga visual." icon={<Computer className="h-20 w-20 text-purple-400 group-hover:text-pink-400 transition-colors" />} onClick={() => setActiveType('administrative')} gradient="bg-gradient-to-r from-purple-500 to-indigo-500" />
-                            <SelectionCard title="Personal Operativo" description="Estiramientos para prevenir molestias músculo-esqueléticas por actividad física." icon={<HardHat className="h-20 w-20 text-purple-400 group-hover:text-pink-400 transition-colors" />} onClick={() => setActiveType('operational')} gradient="bg-gradient-to-r from-pink-500 to-orange-500" />
+                            <SelectionCard title="Personal administrativo" description="Ejercicios enfocados en relajar músculos por posturas sedentarias y fatiga visual." icon={<Computer className="h-20 w-20 text-purple-400 group-hover:text-pink-400 transition-colors" />} onClick={() => setActiveType('administrative')} gradient="bg-gradient-to-r from-purple-500 to-indigo-500" />
+                            <SelectionCard title="Personal operativo" description="Estiramientos para prevenir molestias músculo-esqueléticas por actividad física." icon={<HardHat className="h-20 w-20 text-purple-400 group-hover:text-pink-400 transition-colors" />} onClick={() => setActiveType('operational')} gradient="bg-gradient-to-r from-pink-500 to-orange-500" />
                         </div>
                     </div>
                 ) : (
                     <div>
                         <div className="flex items-center  mb-8">
                             <button onClick={() => setActiveType(null)} className="flex items-center mt-8 text-purple-400 hover:text-purple-300 font-semibold transition-colors mr-4 p-2 rounded-full hover:bg-gray-800"><ArrowLeft className="h-6 w-6" /><span className="ml-2 hidden md:inline">Volver</span></button>
-                            <h1 className="text-3xl md:text-4xl font-bold mt-8 text-white">Pausa Activa para Personal {activeType === 'administrative' ? 'Administrativo' : 'Operativo'}</h1>
+                            <h1 className="text-3xl md:text-4xl font-bold mt-8 text-white">Pausa activa para personal {activeType === 'administrative' ? 'administrativo' : 'operativo'}</h1>
                         </div>
                           
                         <div className="bg-gray-800/50 backdrop-blur-sm border  border-gray-700 p-6 rounded-2xl shadow-lg mb-12">

@@ -1,30 +1,176 @@
-
-import { Exercise } from '@/types/exercise';
+import {Exercise} from '@/types/exercise';
 
 
 export const administrativeExercises: Exercise[] = [
-  { area: 'Manos', title: 'Calentamiento de Manos', description: 'Abrir y cerrar las manos repetidamente.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Manos', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Manos' },
-  { area: 'Muñecas', title: 'Rotación de Muñecas', description: 'Girar las muñecas en varias direcciones.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Muñecas', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Muñecas' },
-  { area: 'Dedos', title: 'Estiramiento de Tendones', description: 'Estirar los dedos de la mano hacia atrás suavemente.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Dedos', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Dedos' },
-  { area: 'Brazos', title: 'Extensión Superior', description: 'Juntar manos y llevarlas sobre la cabeza extendiendo codos.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Brazos', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Brazos' },
-  { area: 'Espalda', title: 'Relajación Cervical', description: 'Entrelazar manos detrás de la espalda y estirar.', duration: '15 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Espalda', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Espalda' },
-  { area: 'Espalda y Brazos', title: 'Estiramiento Completo', description: 'Entrelazar dedos y llevar brazos hacia arriba, en punta de pies.', duration: '15 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Completo', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Completo' },
-  { area: 'Cuello', title: 'Extensión Posterior', description: 'Llevar la cabeza hacia atrás suavemente.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Cuello', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Cuello' },
-  { area: 'Cuello', title: 'Flexión Anterior', description: 'Llevar la cabeza hacia abajo, acercando el mentón al pecho.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Flexión', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Flexión' },
-  { area: 'Cuello', title: 'Inclinación Lateral', description: 'Inclinar la cabeza hacia un lado y luego al otro.', duration: '10 seg c/lado', imageUrl: '/animations/estiramiento-cuello.gif', staticImageUrl: '/images/estiramiento-cuello-foto.png' },
-  { area: 'Ojos', title: 'Descanso Visual', description: 'Calentar palmas y cubrir los ojos cerrados con ellas.', duration: '15 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Ojos', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Ojos' },
-  { area: 'Ojos', title: 'Enfoque Lejano/Cercano', description: 'Mirar alternativamente objetos cercanos y lejanos.', duration: '20 seg', imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Enfoque', staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Enfoque' },
+    {
+        area: 'Manos',
+        title: 'Calentamiento de Manos',
+        description: 'Abrir y cerrar las manos repetidamente.',
+        duration: '10 seg',
+        imageUrl: '/animations/manos_calentamiento.gif',
+        staticImageUrl: '/animations/manos_calentamiento.gif'
+    },
+    {
+        area: 'Muñecas',
+        title: 'Rotación de Muñecas',
+        description: 'Girar las muñecas en varias direcciones.',
+        duration: '10 seg',
+        imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Muñecas',
+        staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Muñecas'
+    },
+    {
+        area: 'Dedos',
+        title: 'Estiramiento de Tendones',
+        description: 'Estirar los dedos de la mano hacia adelante suavemente.',
+        duration: '10 seg',
+        imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Dedos',
+        staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Dedos'
+    },
+    {
+        area: 'Brazos',
+        title: 'Extensión Superior',
+        description: 'Juntar manos y llevarlas sobre la cabeza extendiendo codos.',
+        duration: '10 seg',
+        imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Brazos',
+        staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Brazos'
+    },
+    {
+        area: 'Espalda',
+        title: 'Relajación Cervical',
+        description: 'Entrelazar manos detrás de la espalda y estirar.',
+        duration: '15 seg',
+        imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Espalda',
+        staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Espalda'
+    },
+    {
+        area: 'Espalda y Brazos',
+        title: 'Estiramiento Completo',
+        description: 'Entrelazar dedos y llevar brazos hacia arriba, en punta de pies.',
+        duration: '15 seg',
+        imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Completo',
+        staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Completo'
+    },
+    {
+        area: 'Cuello',
+        title: 'Extensión Posterior',
+        description: 'Llevar la cabeza hacia atrás suavemente.',
+        duration: '10 seg',
+        imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Cuello',
+        staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Cuello'
+    },
+    {
+        area: 'Cuello',
+        title: 'Flexión Anterior',
+        description: 'Llevar la cabeza hacia abajo, acercando el mentón al pecho.',
+        duration: '10 seg',
+        imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Flexión',
+        staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Flexión'
+    },
+    {
+        area: 'Cuello',
+        title: 'Inclinación Lateral',
+        description: 'Inclinar la cabeza hacia un lado y luego al otro.',
+        duration: '10 seg c/lado',
+        imageUrl: '/animations/estiramiento-cuello.gif',
+        staticImageUrl: '/images/estiramiento-cuello-foto.png'
+    },
+    {
+        area: 'Ojos',
+        title: 'Descanso Visual',
+        description: 'Calentar palmas y cubrir los ojos cerrados con ellas.',
+        duration: '15 seg',
+        imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Ojos',
+        staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Ojos'
+    },
+    {
+        area: 'Ojos',
+        title: 'Enfoque Lejano/Cercano',
+        description: 'Mirar alternativamente objetos cercanos y lejanos.',
+        duration: '20 seg',
+        imageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.gif?text=GIF+Enfoque',
+        staticImageUrl: 'https://placehold.co/600x400/7E57C2/EDE7F6.png?text=Enfoque'
+    },
 ];
 
 export const operationalExercises: Exercise[] = [
-  { area: 'Cuello', title: 'Flexión de Cuello', description: 'Llevar la cabeza hacia abajo con ayuda de las manos.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Cuello', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Cuello' },
-  { area: 'Hombros', title: 'Elevación de Hombros', description: 'Levantar los hombros hacia las orejas y relajar.', duration: '5 seg (x2)', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Hombros', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Hombros' },
-  { area: 'Hombros', title: 'Estiramiento Cruzado', description: 'Cruzar un brazo y presionar el codo con la mano opuesta.', duration: '10 seg c/lado', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Hombro', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Hombro' },
-  { area: 'Brazos', title: 'Estiramiento de Tríceps', description: 'Llevar un codo por detrás de la cabeza y empujar.', duration: '10 seg c/lado', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Tríceps', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Tríceps' },
-  { area: 'Brazos', title: 'Extensión Superior Entrelazada', description: 'Entrelazar manos y estirar brazos sobre la cabeza.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Brazos', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Brazos' },
-  { area: 'Espalda', title: 'Inclinación Lateral', description: 'Inclinar el tronco hacia un lado, estirando el costado.', duration: '10 seg c/lado', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Tronco', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Tronco' },
-  { area: 'Piernas', title: 'Estiramiento de Cuádriceps', description: 'Sujetar un pie por detrás, llevando el talón al glúteo.', duration: '10 seg c/pierna', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Piernas', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Piernas' },
-  { area: 'Cuello', title: 'Inclinación Lateral Asistida', description: 'Inclinar la cabeza hacia un lado ayudado por la mano.', duration: '10 seg c/lado', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Inclinación', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Inclinación' },
-  { area: 'Hombros', title: 'Extensión Superior', description: 'Entrelazar manos y estirar brazos hacia el techo.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Hombros', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Hombros' },
-  { area: 'Brazos', title: 'Estiramiento Posterior', description: 'Entrelazar dedos detrás de la espalda y levantar brazos.', duration: '10 seg', imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Posterior', staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Posterior' },
+    {
+        area: 'Cuello',
+        title: 'Flexión de Cuello',
+        description: 'Llevar la cabeza hacia abajo con ayuda de las manos.',
+        duration: '10 seg',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Cuello',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Cuello'
+    },
+    {
+        area: 'Hombros',
+        title: 'Elevación de Hombros',
+        description: 'Levantar los hombros hacia las orejas y relajar.',
+        duration: '5 seg (x2)',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Hombros',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Hombros'
+    },
+    {
+        area: 'Hombros',
+        title: 'Estiramiento Cruzado',
+        description: 'Cruzar un brazo y presionar el codo con la mano opuesta.',
+        duration: '10 seg c/lado',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Hombro',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Hombro'
+    },
+    {
+        area: 'Brazos',
+        title: 'Estiramiento de Tríceps',
+        description: 'Llevar un codo por detrás de la cabeza y empujar.',
+        duration: '10 seg c/lado',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Tríceps',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Tríceps'
+    },
+    {
+        area: 'Brazos',
+        title: 'Extensión Superior Entrelazada',
+        description: 'Entrelazar manos y estirar brazos sobre la cabeza.',
+        duration: '10 seg',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Brazos',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Brazos'
+    },
+    {
+        area: 'Espalda',
+        title: 'Inclinación Lateral',
+        description: 'Inclinar el tronco hacia un lado, estirando el costado.',
+        duration: '10 seg c/lado',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Tronco',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Tronco'
+    },
+    {
+        area: 'Piernas',
+        title: 'Estiramiento de Cuádriceps',
+        description: 'Sujetar un pie por detrás, llevando el talón al glúteo.',
+        duration: '10 seg c/pierna',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Piernas',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Piernas'
+    },
+    {
+        area: 'Cuello',
+        title: 'Inclinación Lateral Asistida',
+        description: 'Inclinar la cabeza hacia un lado ayudado por la mano.',
+        duration: '10 seg c/lado',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Inclinación',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Inclinación'
+    },
+    {
+        area: 'Hombros',
+        title: 'Extensión Superior',
+        description: 'Entrelazar manos y estirar brazos hacia el techo.',
+        duration: '10 seg',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Hombros',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Hombros'
+    },
+    {
+        area: 'Brazos',
+        title: 'Estiramiento Posterior',
+        description: 'Entrelazar dedos detrás de la espalda y levantar brazos.',
+        duration: '10 seg',
+        imageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.gif?text=GIF+Posterior',
+        staticImageUrl: 'https://placehold.co/600x400/EC407A/FCE4EC.png?text=Posterior'
+    },
 ];

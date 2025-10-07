@@ -5,7 +5,7 @@ import {Weight, ShieldCheck, ArrowRight, Layers} from 'lucide-react';
 
 const proceduresData = {
     general: {
-        title: 'Procedimientos Generales',
+        title: 'Procedimientos generales',
         icon: <Weight className="w-10 h-10 text-amber-400"/>,
         items: [
             "Sitúese frente al objeto con los pies separados para una base estable.",

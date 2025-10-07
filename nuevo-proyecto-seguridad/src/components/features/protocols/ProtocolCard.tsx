@@ -20,7 +20,7 @@ export const ProtocolCard = ({ protocol, onSelect }: ProtocolCardProps) => {
         </div>
         <h3 className="text-2xl font-bold tracking-tight">{protocol.title}</h3>
         <p className="flex-grow mt-2 opacity-90">{protocol.description}</p>
-        <span className="mt-6 font-semibold inline-block">Ver Protocolo →</span>
+        <span className="mt-6 font-semibold inline-block">Ver protocolo →</span>
       </div>
 
       <div className="absolute top-0 right-0 text-white/10 transform transition-transform duration-500 group-hover:scale-150 group-hover:rotate-12">

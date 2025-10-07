@@ -21,7 +21,7 @@ export const StressHero = () => {
           <BrainCircuit className="w-12 h-12 text-cyan-400" />
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-          ¡Despídete del Estrés Laboral!
+          ¡Despídete del estrés laboral!
         </h1>
         <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
           Todos somos propensos a padecer altos niveles de estrés por nuestras
@@ -31,7 +31,7 @@ export const StressHero = () => {
       </div>
       <div className="container relative  mx-auto max-w-4xl mb-32 z-10">
         <h2 className="text-3xl font-bold text-center text-white mb-8">
-          ¿Qué es el Estrés Laboral?{" "}
+          ¿Qué es el estrés laboral?{" "}
         </h2>
         <div className="bg-transparent border-2 border-blue-500 p-6 rounded-lg">
           <p className="text-lg text-center text-white">

@@ -8,7 +8,7 @@ export default function MapPage() {
         <header className="mb-8 text-center w-full">
           <h1 className="text-4xl font-extrabold tracking-tight text-white">
             <Map className="w-10 h-10 text-blue-500 pr-2 inline-block" />
-            Mapa Interactivo de Instalaciones
+            Mapa Interactivo de instalaciones
           </h1>
           <p className="mt-2 text-lg text-gray-300">
             Selecciona un piso y una categoría para explorar el mapa.
