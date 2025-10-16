@@ -15,10 +15,10 @@ const baseUrl = process.env.NEXT_PUBLIC_API_URL ?? '';
 const roleKeyMapping: {
     [key: string]: 'Lider_de_Emergencia' | 'comite_de_crisis' | 'lider_de_brigada' | 'brigadista' | 'lider_evacuacion' | 'coordinador_de_evacuacion'
 } = {
-    'LIDER DE LA EMERGENCIA': 'Lider_de_Emergencia',
+    'LÍDER DE LA EMERGENCIA': 'Lider_de_Emergencia',
     'COMITÉ DE CRISIS': 'comite_de_crisis',
-    'LIDER DE LA BRIGADA': 'lider_de_brigada',
-    'LÍDERE DE EVACUACIÓN': 'lider_evacuacion',
+    'LÍDER DE LA BRIGADA': 'lider_de_brigada',
+    'LÍDER DE EVACUACIÓN': 'lider_evacuacion',
     'BRIGADISTA': 'brigadista',
     'COORDINADOR DE EVACUACIÓN': 'coordinador_de_evacuacion'
 

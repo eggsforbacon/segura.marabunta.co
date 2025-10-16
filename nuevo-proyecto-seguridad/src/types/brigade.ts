@@ -5,7 +5,7 @@ export interface Brigadista {
   id: number;
   nombre: string;
   departamento: string;
-  rol: 'LIDER DE LA EMERGENCIA' | 'COMITÉ DE CRISIS' | 'LIDER DE LA BRIGADA' | 'LÍDERE DE EVACUACIÓN' | 'BRIGADISTA' | 'COORDINADOR DE EVACUACIÓN';
+  rol: 'LÍDER DE LA EMERGENCIA' | 'COMITÉ DE CRISIS' | 'LÍDER DE LA BRIGADA' | 'LÍDER DE EVACUACIÓN' | 'BRIGADISTA' | 'COORDINADOR DE EVACUACIÓN';
   habilidades: string;
   estado: 'Activo' | 'No Activo';
   foto: {
