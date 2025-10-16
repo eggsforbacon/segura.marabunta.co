@@ -26,10 +26,10 @@
     "rol": {
       "type": "enumeration",
       "enum": [
-        "LIDER DE LA EMERGENCIA",
+        "LÍDER DE LA EMERGENCIA",
         "COMITÉ DE CRISIS",
-        "LIDER DE LA BRIGADA",
-        "LÍDERE DE EVACUACIÓN",
+        "LÍDER DE LA BRIGADA",
+        "LÍDER DE EVACUACIÓN",
         "BRIGADISTA",
         "COORDINADOR DE EVACUACIÓN"
       ]
