@@ -10,6 +10,7 @@ import {Brigadista} from "@/types/brigade";
 interface BrigadeProfileCardProps {
     brigadista: Brigadista;
 }
+const baseUrl = process.env.NEXT_PUBLIC_API_URL ?? '';
 
 const roleKeyMapping: {
     [key: string]: 'Lider_de_Emergencia' | 'comite_de_crisis' | 'lider_de_brigada' | 'brigadista' | 'lider_evacuacion' | 'coordinador_de_evacuacion'
@@ -26,8 +27,9 @@ const roleKeyMapping: {
 export const BrigadeProfileCard = ({brigadista}: BrigadeProfileCardProps) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
-    const {nombre, departamento, rol, foto, habilidades, estado} = brigadista;
-    const imageUrl = `http://localhost:1337${foto.url}`;
+    const { nombre, departamento, rol, foto, habilidades, estado } = brigadista;
+    const cleanBase = baseUrl.endsWith('/api') ? baseUrl.slice(0, -4) : baseUrl;
+    const imageUrl = `${cleanBase}${foto?.url || ''}`;
 
     const roleKey = roleKeyMapping[rol];
     const styles = roleStyles[roleKey];

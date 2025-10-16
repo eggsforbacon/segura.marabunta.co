@@ -10,6 +10,11 @@ const nextConfig = {
         port: '1337',
         pathname: '/uploads/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'api.sst.marabunta.co',
+        pathname: '/uploads/**',
+      },
     ],
   },
   

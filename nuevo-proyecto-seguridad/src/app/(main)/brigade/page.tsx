@@ -1,11 +1,13 @@
-import {BrigadeHero} from '@/components/features/brigade/BrigadeHero';
-import {BrigadeProfileCard} from '@/components/features/brigade/BrigadeProfileCard';
-import {Brigadista} from '@/types/brigade';
+import { BrigadeHero } from '@/components/features/brigade/BrigadeHero';
+import { BrigadeProfileCard } from '@/components/features/brigade/BrigadeProfileCard';
+import { Brigadista } from '@/types/brigade';
+
+const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
 async function getBrigadista() {
     try {
 
-        const res = await fetch('http://localhost:1337/api/brigadistas?&sort[0]=orden&sort[1]=orden&populate=*');
+        const res = await fetch(`${baseUrl}/brigadistas?&sort[0]=orden&sort[1]=orden&populate=*`);
 
         if (!res.ok) throw new Error('No se pudieron obtener los datos');
         const data = await res.json();
@@ -15,7 +17,6 @@ async function getBrigadista() {
         return [];
     }
 }
-
 export default async function BrigadePage() {
     const brigadista: Brigadista[] = await getBrigadista();
 

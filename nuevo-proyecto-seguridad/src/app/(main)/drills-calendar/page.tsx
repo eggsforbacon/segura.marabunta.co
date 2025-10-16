@@ -56,6 +56,8 @@ const eventTypeStyles = {
     },
 };
 
+const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+
 export default function DrillsCalendarPage() {
     const [eventos, setEventos] = useState<Simulacro[]>([]);
     const [currentDate, setCurrentDate] = useState(new Date());
@@ -64,7 +66,7 @@ export default function DrillsCalendarPage() {
     useEffect(() => {
         async function getSimulacros() {
             try {
-                const res = await fetch('http://localhost:1337/api/calendarios', {cache: 'no-store'});
+                const res = await fetch(`${baseUrl}/calendarios`, { cache: 'no-store' });
                 if (!res.ok) throw new Error('No se pudieron obtener los simulacros');
                 const data = await res.json();
                 setEventos(data.data || []);
@@ -73,7 +75,6 @@ export default function DrillsCalendarPage() {
                 setEventos([]);
             }
         }
-
         getSimulacros();
     }, []);
 
