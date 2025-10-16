@@ -31,8 +31,8 @@ export const BrigadeProfileCard = ({brigadista}: BrigadeProfileCardProps) => {
     const cleanBase = baseUrl.endsWith('/api') ? baseUrl.slice(0, -4) : baseUrl;
     const imageUrl = `${cleanBase}${foto?.url || ''}`;
 
-    const roleKey = roleKeyMapping[rol];
-    const styles = roleStyles[roleKey];
+    const roleKey = roleKeyMapping[rol] ?? 'brigadista';
+    const styles = roleStyles[roleKey] ?? roleStyles['brigadista'];
 
     return (
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
