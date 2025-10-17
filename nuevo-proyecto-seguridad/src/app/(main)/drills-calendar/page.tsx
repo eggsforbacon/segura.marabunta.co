@@ -162,10 +162,12 @@ export default function DrillsCalendarPage() {
                             <button onClick={() => changeMonth(-1)}
                                     className="p-2 rounded-full hover:bg-gray-700 transition-colors"><ChevronLeft
                                 className="h-6 w-6 text-purple-400"/></button>
-                            <h2 className="text-2xl font-bold text-white capitalize">{currentDate.toLocaleString('es-ES', {
-                                month: 'long',
-                                year: 'numeric'
-                            })}</h2>
+                            <h2 className="text-2xl font-bold text-white">
+                                {currentDate.toLocaleString('es-ES', {
+                                    month: 'long',
+                                    year: 'numeric'
+                                }).replace(/^./, (str) => str.toUpperCase())}
+                            </h2>
                             <button onClick={() => changeMonth(1)}
                                     className="p-2 rounded-full hover:bg-gray-700 transition-colors"><ChevronRight
                                 className="h-6 w-6 text-purple-400"/></button>
@@ -208,11 +210,16 @@ export default function DrillsCalendarPage() {
                         <div
                             className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 p-6 rounded-2xl shadow-lg sticky top-8">
                             <h3 className="text-2xl font-bold text-white mb-4">
-                                {selectedDate ? selectedDate.toLocaleDateString('es-ES', {
+                            {selectedDate
+                                ? selectedDate
+                                    .toLocaleDateString('es-ES', {
                                     weekday: 'long',
                                     day: 'numeric',
-                                    month: 'long'
-                                }) : 'Selecciona un día'}
+                                    month: 'long',
+                                    })
+                                    .replace(/^./, (str) => str.toUpperCase())
+                                    .replace(/ de ([a-záéíóúñ]+)/, (_, month) => ` de ${month.charAt(0).toUpperCase() + month.slice(1)}`)
+                                : 'Selecciona un día'}
                             </h3>
                             <div className="space-y-4 h-96 overflow-y-auto pr-2">
                                 {selectedDayEvents.length > 0 ? (

@@ -18,7 +18,7 @@ const proceduresData = {
         ],
     },
     shoulderTransport: {
-        title: 'Transporte al Hombro',
+        title: 'Transporte al hombro',
         icon: <Weight className="w-10 h-10 text-amber-400"/>,
         items: [
             "Coloque sus pies lo más cerca posible de la carga.",
@@ -30,7 +30,7 @@ const proceduresData = {
         ],
     },
     sheetHandling: {
-        title: 'Manipulación de Láminas',
+        title: 'Manipulación de láminas',
         icon: <Layers className="w-10 h-10 text-sky-400"/>,
         items: [
             "Párese cerca del arrume de láminas.",
@@ -44,7 +44,7 @@ const proceduresData = {
         ],
     },
     largeSheetHandling: {
-        title: 'Láminas de Gran Tamaño (2 personas)',
+        title: 'Láminas de gran tamaño (2 personas)',
         icon: <Layers className="w-10 h-10 text-teal-400"/>,
         items: [
             "Esta tarea debe ser realizada por dos personas.",
@@ -113,9 +113,9 @@ export const ManualHandlingGuide = () => {
             <div className="border-b border-gray-700 mb-6 pb-3">
                 <div className="flex space-x-2 overflow-x-auto pb-2">
                     <TabButton id="general">Generales</TabButton>
-                    <TabButton id="shoulderTransport">Al Hombro</TabButton>
+                    <TabButton id="shoulderTransport">Al hombro</TabButton>
                     <TabButton id="sheetHandling">Láminas</TabButton>
-                    <TabButton id="largeSheetHandling">Láminas Grandes</TabButton>
+                    <TabButton id="largeSheetHandling">Láminas grandes</TabButton>
                 </div>
             </div>
 

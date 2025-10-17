@@ -22,7 +22,7 @@ export const BrigadeHero = () => {
             {/* Sección secundaria */}
             <div className="container relative mx-auto max-w-4xl mt-12 z-10">
                 <h2 className="text-3xl font-bold text-center text-white mb-8">
-                    ¿Cómo está organizado el Comité?
+                    ¿Cómo está organizado el comité?
                 </h2>
                 <div className="bg-transparent border-2 border-green-500 p-6 rounded-lg">
                     <p className="text-lg text-center text-white">

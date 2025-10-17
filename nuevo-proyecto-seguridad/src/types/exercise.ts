@@ -1,9 +1,8 @@
-
 export interface Exercise {
-  area: string;
   title: string;
   description: string;
+  area: string;
   duration: string;
-  imageUrl: string; 
-  staticImageUrl: string; 
+  staticImageUrl: string;
+  videoUrl: string;
 }
