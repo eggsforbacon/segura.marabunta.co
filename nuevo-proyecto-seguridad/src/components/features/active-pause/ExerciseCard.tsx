@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Exercise } from '@/types/exercise';
 import Image from 'next/image';
+import { VideoModal } from '@/components/ui/VideoModal';
 
 interface ExerciseCardProps {
   exercise: Exercise;
@@ -10,51 +11,64 @@ interface ExerciseCardProps {
 
 export const ExerciseCard = ({ exercise, isCompact = false }: ExerciseCardProps) => {
   const [isHovering, setIsHovering] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div
-      className={`bg-gray-800 rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out flex flex-col shadow-lg hover:shadow-purple-500/30 ${isCompact ? 'w-64 flex-shrink-0' : ''}`}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
-    >
-      <div className={`relative w-full ${isCompact ? 'h-32' : 'h-48'}`}>
-        {isHovering ? (
-          <video
-            src={exercise.videoUrl}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute top-0 left-0 w-full h-full object-cover"
-          />
-        ) : (
-          <Image
-            src={exercise.staticImageUrl}
-            alt={`Demostración de ${exercise.title}`}
-            width={600}
-            height={400}
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            priority={isCompact}
-          />
-        )}
+    <>
+      <div
+        className={`bg-gray-800 rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out flex flex-col shadow-lg hover:shadow-purple-500/30 cursor-pointer ${isCompact ? 'w-64 flex-shrink-0' : ''}`}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+        onClick={() => setOpenModal(true)}
+      >
+        <div className={`relative w-full ${isCompact ? 'h-32' : 'h-48'}`}>
+          {isHovering ? (
+            <video
+              src={exercise.videoUrl}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover"
+            />
+          ) : (
+            <Image
+              src={exercise.staticImageUrl}
+              alt={`Demostración de ${exercise.title}`}
+              width={600}
+              height={400}
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              priority={isCompact}
+            />
+          )}
+        </div>
+
+        <div className="p-4 flex-grow flex flex-col">
+          <div className="flex justify-between items-start">
+            <div>
+              <p className="text-xs font-semibold text-purple-400 uppercase tracking-wide">
+                {exercise.area}
+              </p>
+              <h3
+                className={`font-bold text-gray-100 ${isCompact ? 'text-base' : 'text-xl mt-1'
+                  }`}
+              >
+                {exercise.title}
+              </h3>
+            </div>
+            <div className="bg-purple-500/20 text-purple-300 text-xs font-bold px-2 py-1 rounded-full flex-shrink-0 ml-2">
+              {exercise.duration}
+            </div>
+          </div>
+          {!isCompact && (
+            <p className="mt-2 text-sm text-gray-400 flex-grow">{exercise.description}</p>
+          )}
+        </div>
       </div>
 
-      <div className="p-4 flex-grow flex flex-col">
-        <div className="flex justify-between items-start">
-          <div>
-            <p className="text-xs font-semibold text-purple-400 uppercase tracking-wide">{exercise.area}</p>
-            <h3 className={`font-bold text-gray-100 ${isCompact ? 'text-base' : 'text-xl mt-1'}`}>
-              {exercise.title}
-            </h3>
-          </div>
-          <div className="bg-purple-500/20 text-purple-300 text-xs font-bold px-2 py-1 rounded-full flex-shrink-0 ml-2">
-            {exercise.duration}
-          </div>
-        </div>
-        {!isCompact && (
-          <p className="mt-2 text-sm text-gray-400 flex-grow">{exercise.description}</p>
-        )}
-      </div>
-    </div>
+      {openModal && (
+        <VideoModal videoUrl={exercise.videoUrl} onClose={() => setOpenModal(false)} />
+      )}
+    </>
   );
 };
