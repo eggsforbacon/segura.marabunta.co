@@ -10,14 +10,15 @@ interface VideoModalProps {
 }
 
 export const VideoModal = ({ videoUrl, onClose }: VideoModalProps) => {
-  if (!videoUrl) return null;
-
   useEffect(() => {
+    if (!videoUrl) return;
     document.body.style.overflow = 'hidden';
     return () => {
       document.body.style.overflow = 'auto';
     };
-  }, []);
+  }, [videoUrl]);
+
+  if (!videoUrl) return null;
 
   return createPortal(
     <AnimatePresence>
