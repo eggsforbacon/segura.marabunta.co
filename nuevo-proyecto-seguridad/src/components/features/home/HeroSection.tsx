@@ -48,13 +48,13 @@ const HeroSection = () => {
                             className="text-left"
                         >
                             <h1 className="text-5xl md:text-7xl  pb-16 font-extrabold">
-                                Bienvenidos
+                                Bienvenidos/as
                             </h1>
                             <h1 className="text-3xl md:text-4xl  pb-8 font-extrabold">
                                 Portal de bienestar, seguridad y salud en el trabajo
                             </h1>
                             <p className="text-lg md:text-xl ">
-                                Bienvenidos a esta zona segura. En este portal, podrás encontrar {"todo"} lo que necesitas
+                                Bienvenidos/as a esta zona segura. En este portal, podrás encontrar {"todo"} lo que necesitas
                                 saber para garantizar tu bienestar y el de tus compañeros. ¡Te invitamos a explorarlo y
                                 tomarte muy en serio tu seguridad y salud en el trabajo!
                             </p>
