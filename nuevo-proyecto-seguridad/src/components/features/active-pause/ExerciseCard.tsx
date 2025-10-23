@@ -16,7 +16,8 @@ export const ExerciseCard = ({ exercise, isCompact = false }: ExerciseCardProps)
   return (
     <>
       <div
-        className={`bg-gray-800 rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out flex flex-col shadow-lg hover:shadow-purple-500/30 cursor-pointer ${isCompact ? 'w-64 flex-shrink-0' : ''}`}
+        className={`bg-gray-800 rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out flex flex-col shadow-lg hover:shadow-purple-500/30 cursor-pointer ${isCompact ? 'w-64 flex-shrink-0' : ''
+          }`}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         onClick={() => setOpenModal(true)}
@@ -67,7 +68,14 @@ export const ExerciseCard = ({ exercise, isCompact = false }: ExerciseCardProps)
       </div>
 
       {openModal && (
-        <VideoModal videoUrl={exercise.videoUrl} onClose={() => setOpenModal(false)} />
+        <VideoModal
+          videoUrl={exercise.videoUrl}
+          title={exercise.title}
+          description={exercise.description}
+          duration={exercise.duration}
+          area={exercise.area}
+          onClose={() => setOpenModal(false)}
+        />
       )}
     </>
   );
