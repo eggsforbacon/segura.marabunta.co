@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const pisos = [
   {
     nombre: "Planta alta",
-    svgUrl: "/images/maps/ultimo.svg",
+    svgUrl: "/images/maps/ultimo-2.svg",
 
     wrapperStyle: { width: "100%", height: "118%" },
   },
